@@ -1,6 +1,7 @@
-FROM ubuntu
-RUN apt-get install apache2 -y
+FROM ubuntu/apache2
 ADD . /var/www/html/
 CMD apachectl -D FOREGROUND 
+
+
 
 
